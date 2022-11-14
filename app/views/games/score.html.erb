@@ -1,0 +1,9 @@
+<div class="container mt-5">
+<h1>Result</h1>
+<p>Your word: <b><%= @answer.upcase %></b></p>
+<p>Time Taken to answer: <b><%= @ellapsed_time.round(2) %></b> seconds</p>
+<p>Your score: <b><%= @score %></b> points</p>
+<p>Message: <%= @message[0] %><b><%= @message[1] %></b><%= @message[2] %></p>
+
+<%= link_to "Play again", "/new" %>
+</div>
