@@ -41,7 +41,7 @@ class ApplicationController < ActionController::Base
   def message_score(dont_exist, not_english, attempt, ellapsed_time)
     score = 0
     if dont_exist.length.positive?
-      message = ['Sorry but ', @answer.upcase, " can\'t be built out of #{@letters.join(',')}"]
+      message = ['Sorry but ', @answer.upcase, " can\'t be built out of #{@letters.join(', ')}"]
     elsif not_english
       message = ['Sorry but ', @answer.upcase, ' does not seem to be a valid English word...']
     else
